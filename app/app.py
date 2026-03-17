@@ -32,9 +32,9 @@ col1, col2 = st.columns(2)
 with col1:
     st.subheader("👤 Customer Info")
     gender = st.selectbox("Gender", ["Male", "Female"])
-    senior_citizen = st.selectbox("Senior Citizen?", ["No", "Yes"])
-    partner = st.selectbox("Partner hai?", ["Yes", "No"])
-    dependents = st.selectbox("Dependents hain?", ["Yes", "No"])
+    senior_citizen = st.selectbox("Senior Citizen ?", ["No", "Yes"])
+    partner = st.selectbox("Partner ?", ["Yes", "No"])
+    dependents = st.selectbox("Dependents", ["Yes", "No"])
     tenure = st.slider("Tenure (Months)", 0, 72, 12)
     contract = st.selectbox("Contract Type",
                 ["Month-to-month", "One year", "Two year"])
