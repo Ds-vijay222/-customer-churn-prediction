@@ -8,11 +8,11 @@ import json
 
 @st.cache_resource
 def load_model():
-    with open("../models/churn_model.pkl", 'rb') as f:
+    with open("models/churn_model.pkl", 'rb') as f:
         model = pickle.load(f)
-    with open("../models/scaler.pkl", "rb") as f:
+    with open("models/scaler.pkl", "rb") as f:
         scaler = pickle.load(f)
-    with open("../models/threshold.json", "r") as f:
+    with open("models/threshold.json", "r") as f:
         threshold = json.load(f)['threshold']
     return model, scaler, threshold
 
